@@ -1,0 +1,75 @@
+:root{
+    --space-cadet: hsla(235, 21%, 21%, 1);
+    --cyclamen: hsla(341, 73%, 66%, 1);
+    --aureolin: hsla(55, 92%, 58%, 1);
+    --seasalt: hsla(240, 14%, 97%, 1);
+    --turquoise: hsla(165, 74%, 57%, 1);
+}
+
+
+.form_wrapper{
+    box-shadow: rgba(0, 0, 0, 0.446) 10px 10px 10px;
+    background-color: var(--space-cadet);
+    padding: 6vmin;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    position: absolute;
+    border-radius: 2vmin;
+    
+    color:var(--seasalt);
+    
+    
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    transition: transform 500ms;
+}
+.form_wrapper .titel{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form_wrapper label {
+    margin-bottom: 7px;
+}
+.form_wrapper label input{
+    float: right;
+    margin-left: 20px;
+}
+button{
+background-color: var(--aureolin);
+border-radius: 1vmin;
+border: solid 1px var(--aureolin);
+transition: padding-left 0.5s;
+}
+.sub_button:hover {
+    padding-left: 80%;
+}
+.sub_button:active{
+    padding-left: 80%;
+    background-color:  var(--space-cadet);
+    color: var(--aureolin)
+}
+
+.sing_in_t{
+padding-top:5px;
+border: none !important;
+background-color: var(--space-cadet) !important;
+color: var(--seasalt);  
+text-decoration: underline !important;
+cursor: pointer !important;
+}
+
+
+#Singin{
+    box-shadow: none;
+    visibility: hidden;
+    transition: visibility 500ms;
+}
+#Loginform{
+    z-index: 5;
+    
+}

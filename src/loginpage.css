@@ -1,0 +1,9 @@
+.main{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: -100;
+    width: 100vw;
+    background-image: url("./extm/css/background.png");
+    /* "./extm/css/background.png"; */
+}
