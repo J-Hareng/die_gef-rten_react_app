@@ -23,14 +23,16 @@ function Login_page() {
   
   
   function onLogin(msg){
-    if (msg != "none"){
-      if( check_ram_for_id){
-        add_id_to_ram(msg._id["$oid"]);
-        change_to_main();
-      
+    if (msg.name != "NONE" && msg.password != "NONE") {
+      if (msg != "none"){
+        if( check_ram_for_id){
+          add_id_to_ram(msg._id["$oid"]);
+          change_to_main();
+        
+        }
+    
       }
-  
-    }
+  }
   }
   function onSignup(msg){
     console.log(msg);
